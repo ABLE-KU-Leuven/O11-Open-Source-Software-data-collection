@@ -9,66 +9,26 @@
 
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="showRelevantDropdown.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="showDropdown.js"></script>
 
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <select class="faculties" id="faculties" name="faculties">
+        <!-- <option value="default" disabled>Kies Faculteit</option>        -->
+    </select>
 
+    <select class="programs" id="programs" >
+        <!-- <option value="default" disabled>Kies Faculteit</option>        -->
+    </select>
 
-<!-- SELECT FACULTY -->
-<select name='faculty' id='faculty' onchange="showRelevantFaculties(this,1)" required class='faculty'>
-    <option  selected="selected" disabled="disabled">Kies faculteit</option>
-    <option value="Rechtsgeleerdheid">Rechtsgeleerdheid</option>
-    <option value="Letteren">Letteren</option>
-</select>
-
-<!-- SELECT PROGRAM IN FACULTY -->
-<select name='facultyRechtsgeleerdheid' id='facultyRechtsgeleerdheid' onchange="showRelevantPrograms(this,1)" required class='program'>
-    <option selected="selected" disabled="disabled">Kies Programma</option>
-    <option value="Rechten">Rechten</option>
-    <option value="Criminologie">Criminologie</option>
-</select>
-
-<select name='facultyLetteren' id='facultyLetteren' onchange="showRelevantPrograms(this,1)" required class='program'>
-    <option selected="selected" disabled="disabled">Kies Programma</option>
-    <option value="Germaans">Germaans</option>
-    <option value="Romaans">Romaans</option>  
-</select>
-
-<!--  SELECT COURSE INSIDE PROGRAM-->
-<select name='programCriminologie' id='programCriminologie' onchange="showRelevantCourses(this,1)" required class='course'>
-    <option selected="selected" disabled="disabled">Kies Vak</option>
-    <option value="TTT_Criminologie">TTT_Criminologie</option>
-</select>
-
-<select name='programRechten' id='programRechten' onchange="showRelevantCourses(this,1)" required class='course'>
-    <option selected="selected" disabled="disabled">Kies Vak</option>
-    <option value="TTT_Rechten">TTT_Rechten</option>
-</select>
-
-<select name='programGermaans' id='programGermaans' onchange="showRelevantCourses(this,1)" required class='course'>
-    <option selected="selected" disabled="disabled">Kies Vak</option>
-    <option value="Germaans">TTT_Germaans</option>
-</select>
-
-<select name='programRomaans' id='programRomaans' onchange="showRelevantCourses(this,1)" required class='course'>
-    <option selected="selected" disabled="disabled">Kies Vak</option>
-    <option value="Romaans">TTT_Romaans</option>
-</select>
-
-<br/>
-<form action="upload.php" method="post" enctype="multipart/form-data" class="submit">
-    Select csv-file to upload: <br/>
-    <input type="file" name="csv" id="csv" accept=".csv">
-    <input type="submit" name="submit" value="Upload csv file" >
+    <select class="courses" id="courses">
+        <!-- <option value="default" disabled>Kies Faculteit</option>        -->
+    </select>
+    <br/>
+    <!-- Select csv-file to upload: <br/> -->
+    <input type="file" name="csv" id="csv" accept=".csv" class="submit">
+    <input type="submit" name="submit" value="Upload csv file" class="submit">
 </form>    
-
-<script>
-let selectedFaculty = "";
-let selectedProgram = "";
-let selectedCourse = "";
-
-
-
-</script>
 
 </body>
 </html>

@@ -25,6 +25,8 @@
     }
 
     $target_dir = "uploads/";
+    $prefix = $_POST['faculties'];
+    echo $prefix;
     $fname = basename($_FILES["csv"]["name"]);
     $target_file = $target_dir . basename($_FILES["csv"]["name"]);
     //$_FILES[csv] gives the uploaded file as array with

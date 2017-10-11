@@ -2,15 +2,15 @@ body {
     background-color: lightblue;
 }
 
-.faculty{
+.faculties{
   display: inline;
 }
 
-.program {
+.programs {
   display: none;
 }
 
-.course {
+.courses {
   display: none;
 }
 
