@@ -23,12 +23,13 @@
             return true;
         }
     }
-
+    $faculty = $_POST['faculties'];
+    $program = $_POST['programs'];
+    $course = $_POST['courses'];
     $target_dir = "uploads/";
-    $prefix = $_POST['faculties'];
-    echo $prefix;
-    $fname = basename($_FILES["csv"]["name"]);
-    $target_file = $target_dir . basename($_FILES["csv"]["name"]);
+    
+    $fname = $faculty.$program.$course.basename($_FILES["csv"]["name"]);
+    $target_file = $target_dir . $fname;
     //$_FILES[csv] gives the uploaded file as array with
     // Name, type, tmp_name, error and size 
     $success = true;
@@ -58,7 +59,8 @@
             fputcsv($handleWrite, $line, ',');
         }
         $nbStudents = $nb -1;
-        echo "You uploaded: $fname <br/>" ;
+        $printfname = basename($_FILES["csv"]["name"]);
+        echo "You uploaded: $printfname <br/>" ;
         echo "This file contained: $nbStudents students";
         fclose($handleWrite);
         
