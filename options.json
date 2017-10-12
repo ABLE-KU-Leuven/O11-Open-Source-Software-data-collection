@@ -45,7 +45,36 @@
             ]
         }
     ]   
-}
+},
+{
+    "name": "faculty3",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "Program31",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Course311"},
+                    {"name": "Course312"}
+                ]
+            },
+            {
+            "name": "Program32",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Course321"},
+                    {"name": "Course322"}
+                ]
+            },
+            {
+                "name": "Program33",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Course331"}
+                    ]
+                }
+        ]   
+    }
 ]
 
 

@@ -4,10 +4,18 @@ d3.json("options.json", function(data) {
     let input = data;
 
     d3.select('#faculties')
-        .on('change', showPrograms);   
+        .on('change', function(){
+            selectedFaculty = d3.select('#faculties')[0][0].value
+            programsData = findProgram(selectedFaculty)
+            showPrograms(programsData)
+        });   
     
     d3.select('#programs')
-        .on('change', showCourses);
+        .on('change', function(){
+            selectedProgram = d3.select('#programs')[0][0].value
+            coursesData = findCourses(selectedProgram)
+            showCourses(coursesData)
+        });
 
     d3.select('#courses')
         .on('change', showSubmit);
@@ -27,38 +35,57 @@ d3.json("options.json", function(data) {
             });
     
 
-    
-
-    
-    
-    function showPrograms(d) {
-        $( ".courses" ).css( "display", "none" );
-        $( ".programs" ).css( "display", "none");
-        selectedFaculty = d3.select('#faculties')[0][0].value
-        programsData = findProgram(selectedFaculty)
+    function showPrograms(programsData) {
+        $( ".courses" ).css( "display", "none");   
+        $( ".submit" ).css( "display", "none");        
+        
+        // append new data
         let programs = d3.select('#programs')
             .selectAll('option')
-            .data(programsData)
+            .data(programsData);
+        // update existing options
+        programs
+            .transition()
+            .duration(70)
+            .text(function (d) { 
+                return d.name; 
+            }); 
+        //  append new data
+        programs
             .enter()
             .append('option')
                 .text(function (d) { 
                     return d.name; 
-                });
+                });   
+        programs
+            .exit()
+            .remove()
+
         $( ".programs" ).css( "display", "inline" );
     };
 
-    function showCourses(d) {
+    function showCourses(coursesData) {
         $( ".courses" ).css( "display", "none" );
-        selectedProgram = d3.select('#programs')[0][0].value
-        coursesData = findCourses(selectedProgram)
+        // append new data
         let courses = d3.select('#courses')
             .selectAll('option')
-            .data(coursesData)
+            .data(coursesData);
+        courses
+            .transition()
+            .duration(70)
+            .text(function(d){
+                return d.name;
+            })
+        courses
             .enter()
             .append('option')
                 .text(function (d) { 
                     return d.name; 
                 });
+        courses
+            .exit()
+            .remove();
+
         $( ".courses" ).css( "display", "inline" );
         
     };
