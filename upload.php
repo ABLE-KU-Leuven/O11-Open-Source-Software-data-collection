@@ -30,8 +30,6 @@
     
     $fname = $faculty.$program.$course.basename($_FILES["csv"]["name"]);
     $target_file = $target_dir . $fname;
-    //$_FILES[csv] gives the uploaded file as array with
-    // Name, type, tmp_name, error and size 
     $success = true;
     if ($_FILES['csv']['size'] > 0) {        
             //get the csv file 
@@ -45,10 +43,11 @@
                     $nb += 1;
                 } 
                 else{
-                    $message = "wrong line on line $nb";
-                    echo "<script type='text/javascript'>alert('$message');</script>";
-                    $success = false;
-                    break;
+                    $message = "We think something is wrong on line $nb";
+                    echo "<script type='text/javascript'>
+                    alert('$message');
+                    window.location.href='http://www.example.com/';
+                    </script>";
                 }
             }
             fclose($handleUploaded);
@@ -64,6 +63,9 @@
         echo "This file contained: $nbStudents students";
         fclose($handleWrite);
         
+    }
+    else{
+        header("Location: http://www.example.com/");
     }
     
 

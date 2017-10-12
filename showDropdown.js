@@ -19,6 +19,11 @@ d3.json("options.json", function(data) {
         .append('option')
             .text(function (d) { 
                 return d.name; 
+            })
+            .each(function(d) {
+                if (d.name === "Kies") {
+                  d3.select(this).property("disabled", true)
+                }
             });
     
 
@@ -75,10 +80,12 @@ d3.json("options.json", function(data) {
     function findCourses(courseName){
         for(var i = 0; i < data.length; i++) {
             var faculty = data[i];
-            children = findCourses1(faculty.children, courseName)
-            if (children != undefined){
-                return children
-            }
+            if (faculty.children != undefined){
+                children = findCourses1(faculty.children, courseName)
+                if (children != undefined){
+                    return children
+                }
+            }   
         }
     }
 
