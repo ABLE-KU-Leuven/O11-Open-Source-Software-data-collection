@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="showDropdown.js"></script>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <select class="faculties" id="faculties" name="faculties">
+        <!-- <option value="default" disabled>Kies Faculteit</option>        -->
+    </select>
+
+    <select class="programs" id="programs" name="programs" >
+        <!-- <option value="default" disabled>Kies Faculteit</option>        -->
+    </select>
+
+    <select class="courses" id="courses" name="courses">
+        <!-- <option value="default" disabled>Kies Faculteit</option>        -->
+    </select>
+    <br/>
+    <!-- Select csv-file to upload: <br/> -->
+    <input type="file" name="csv" id="csv" accept=".csv" class="submit">
+    <input type="submit" name="submit" value="Upload csv file" class="submit">
+</form>    
+
+</body>
+</html>

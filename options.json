@@ -1,0 +1,84 @@
+[
+{
+"name": "Kies"
+},
+{
+"name": "faculty",
+    "children": [
+        {"name": "Kies"},
+        {
+        "name": "Program1",
+            "children": [
+                {"name": "Kies"},
+                {"name": "Course1"},
+                {"name": "Course2"}
+            ]
+        },
+        {
+        "name": "Program2",
+            "children": [
+                {"name": "Kies"},
+                {"name": "Course3"},
+                {"name": "Course4"}
+            ]
+        }
+    ]   
+},
+{
+"name": "faculty2",
+    "children": [
+        {"name": "Kies"},
+        {
+        "name": "Program21",
+            "children": [
+                {"name": "Kies"},
+                {"name": "Course21"},
+                {"name": "Course22"}
+            ]
+        },
+        {
+        "name": "Program22",
+            "children": [
+                {"name": "Kies"},
+                {"name": "Course23"},
+                {"name": "Course24"}
+            ]
+        }
+    ]   
+},
+{
+    "name": "faculty3",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "Program31",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Course311"},
+                    {"name": "Course312"}
+                ]
+            },
+            {
+            "name": "Program32",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Course321"},
+                    {"name": "Course322"}
+                ]
+            },
+            {
+                "name": "Program33",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Course331"}
+                    ]
+                }
+        ]   
+    }
+]
+
+
+
+
+
+

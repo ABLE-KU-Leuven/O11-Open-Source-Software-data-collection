@@ -1,0 +1,19 @@
+body {
+    background-color: lightblue;
+}
+
+.faculties{
+  display: inline;
+}
+
+.programs {
+  display: none;
+}
+
+.courses {
+  display: none;
+}
+
+.submit {
+  display: none;
+}
