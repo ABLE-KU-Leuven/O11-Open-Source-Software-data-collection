@@ -10,9 +10,16 @@
         if (count($data) != 2){
             return false;
         }
-        if (!is_numeric($data[0])||!is_numeric($data[1])){
-            echo 'I found a string instead of an integer <br/>';
+        if (!is_numeric($data[0])){
             return false;
+        }
+        if (!is_numeric($data[1])){
+            if ($data[1] == "NA" || $data[1] == "#"){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
         $studentId = (int)$data[0];
         $grades = (int)$data[1];
@@ -28,7 +35,7 @@
     $course = $_POST['courses'];
     $target_dir = "uploads/";
     
-    $fname = $faculty.$program.$course.basename($_FILES["csv"]["name"]);
+    $fname = $faculty.$program.$course.'.csv';
     $target_file = $target_dir . $fname;
     $success = true;
     if ($_FILES['csv']['size'] > 0) {        
@@ -43,11 +50,13 @@
                     $nb += 1;
                 } 
                 else{
+                    $success = false;
                     $message = "We think something is wrong on line $nb";
                     echo "<script type='text/javascript'>
                     alert('$message');
-                    window.location.href='http://www.example.com/';
+                    window.location.href='https://learninganalytics.set.kuleuven.be/lissa1718-upload/';
                     </script>";
+
                 }
             }
             fclose($handleUploaded);
@@ -63,9 +72,6 @@
         echo "This file contained: $nbStudents students";
         fclose($handleWrite);
         
-    }
-    else{
-        header("Location: http://www.example.com/");
     }
     
 
