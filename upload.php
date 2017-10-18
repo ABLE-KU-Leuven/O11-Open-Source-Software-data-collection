@@ -1,8 +1,8 @@
 <?php
     /*
     check if consist of 2 values
-    check if two integers
-    check if grades in range 0-20
+    check if studentId is integer
+    check if grades is intiger in range 0-20 or NA or #
 
     */
     function checkValidData($data) {
@@ -41,6 +41,12 @@
     if ($_FILES['csv']['size'] > 0) {        
             //get the csv file 
             $file = $_FILES['csv']['tmp_name']; 
+            //replace ; by , if needed
+            $content=file_get_contents($file);
+            $content_chunks=explode(';', $content);
+            $content=implode(',', $content_chunks);
+            file_put_contents($file, $content);
+            //
             $handleUploaded = fopen($file,"r"); 
             $output_CSV[0] = array('studentid', 'grades');
             $nb = 1;
