@@ -33,7 +33,7 @@
     $faculty = $_POST['faculties'];
     $program = $_POST['programs'];
     $course = $_POST['courses'];
-    $target_dir = "uploads/";
+    $target_dir = "../uploads/";
     
     $fname = $faculty.$program.$course.'.csv';
     $target_file = $target_dir . $fname;
