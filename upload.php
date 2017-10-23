@@ -6,7 +6,7 @@
 
     */
     function checkValidData($data) {
-        
+
         if (count($data) != 2){
             return false;
         }
@@ -34,27 +34,27 @@
     $program = $_POST['programs'];
     $course = $_POST['courses'];
     $target_dir = "../uploads/";
-    
+
     $fname = $faculty.$program.$course.'.csv';
     $target_file = $target_dir . $fname;
     $success = true;
-    if ($_FILES['csv']['size'] > 0) {        
-            //get the csv file 
-            $file = $_FILES['csv']['tmp_name']; 
+    if ($_FILES['csv']['size'] > 0) {
+            //get the csv file
+            $file = $_FILES['csv']['tmp_name'];
             //replace ; by , if needed
             $content=file_get_contents($file);
             $content_chunks=explode(';', $content);
             $content=implode(',', $content_chunks);
             file_put_contents($file, $content);
             //
-            $handleUploaded = fopen($file,"r"); 
-            $output_CSV[0] = array('studentid', 'grades');
+            $handleUploaded = fopen($file,"r");
+            $output_CSV[0] = array('faculty','proram', 'course', 'studentid', 'grades');
             $nb = 1;
             while ( $data = fgetcsv($handleUploaded,1000,",","'")){
-                if (checkValidData($data)) { 
-                    $output_CSV[$nb] = array($data[0], $data[1]);
+                if (checkValidData($data)) {
+                    $output_CSV[$nb] = array($faculty, $program, $course, $data[0], $data[1]);
                     $nb += 1;
-                } 
+                }
                 else{
                     $success = false;
                     $message = "We think something is wrong on line $nb";
@@ -66,7 +66,7 @@
                 }
             }
             fclose($handleUploaded);
-    } 
+    }
     if ($success){
         $handleWrite = fopen($target_file, "w");
         foreach ($output_CSV as $line) {
@@ -77,8 +77,8 @@
         echo "You uploaded: $printfname <br/>" ;
         echo "This file contained: $nbStudents students";
         fclose($handleWrite);
-        
+
     }
-    
+
 
 ?>
