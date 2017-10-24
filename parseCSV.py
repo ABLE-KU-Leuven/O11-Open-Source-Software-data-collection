@@ -45,9 +45,9 @@ def getRemaining(filename, string):
 
 def getSemester(course):
     if course.startswith('TTT'):
-        return 'B'
+        return -1
     else:
-        return 'A'
+        return -2
 
 def getCourse(courseextension):
     return courseextension.split('.')[0]
@@ -60,7 +60,7 @@ def writeGradesCSV(filename, writepath, course):
         for row in reader:
              studentid = row[0]
              score = row[1]
-             gradesToCSV.append([studentid, course, score, 'J', '2017-2018', score, '#'])
+             gradesToCSV.append([studentid, course, score, 'J', '2016-2017', score, '#'])
     if not os.path.isfile(writepath):
         gradesToCSV.insert(0,['studentid','courseid', 'finalscore', 'generatiestudent', 'year', 'grade_try1', 'grade_try2'])
 
