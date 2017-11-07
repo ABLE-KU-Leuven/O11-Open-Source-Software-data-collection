@@ -3,82 +3,442 @@
 "name": "Kies"
 },
 {
-"name": "faculty",
+"name": "Wetenschappen",
     "children": [
         {"name": "Kies"},
         {
-        "name": "Program1",
+        "name": "ABA biochemie en biotechnologie (Leuv)",
             "children": [
                 {"name": "Kies"},
-                {"name": "Course1"},
-                {"name": "Course2"}
+                {"name": "Ijkingstoets Juli"},
+                {"name": "Voorkennistest wiskunde"},
+                {"name": "TTT Celbiologie en biochemie"}
             ]
         },
         {
-        "name": "Program2",
+        "name": "ABA biologie (Leuv)",
             "children": [
                 {"name": "Kies"},
-                {"name": "Course3"},
-                {"name": "Course4"}
+                {"name": "Ijkingstoets Juli"},
+                {"name": "Voorkennistest wiskunde"},
+                {"name": "TTT Celbiologie en biochemie"}
             ]
+        },
+        {
+            "name": "ABA chemie (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Voorkennistest wiskunde"},
+                    {"name": "TTT Celbiologie en biochemie"}
+                ]
+        },
+        {
+            "name": "ABA fysica (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Ijkingstoets September"},
+                    {"name": "Voorkennistest wiskunde"},
+                    {"name": "TTT Calculus 1"}
+                ]
+        },
+        {
+            "name": "ABA geografie (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Voorkennistest wiskunde"}
+                ]
+        },
+        {
+            "name": "ABA geologie (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Voorkennistest wiskunde"}
+                ]
+        },
+        {
+            "name": "ABA informatica (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Ijkingstoets September"},
+                    {"name": "Voorkennistest wiskunde"},
+                    {"name": "TTT Bewijzen en redeneren voor informatici"},
+                    {"name": "TTT SOCS"},
+                    {"name": "TTT IW"}
+
+                ]
+        },
+        {
+            "name": "ABA wiskunde (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Ijkingstoets September"},
+                    {"name": "TTT Calculus en Analyse"}
+                ]
         }
-    ]   
+
+
+    ]
 },
 {
-"name": "faculty2",
+"name": "Bio-ingenieurswetenschappen",
     "children": [
         {"name": "Kies"},
         {
-        "name": "Program21",
+        "name": "ABA bio-ingenieurswetenschappen (Leuv)",
             "children": [
                 {"name": "Kies"},
-                {"name": "Course21"},
-                {"name": "Course22"}
-            ]
-        },
-        {
-        "name": "Program22",
-            "children": [
-                {"name": "Kies"},
-                {"name": "Course23"},
-                {"name": "Course24"}
+                {"name": "Ijkingstoets Juli"},
+                {"name": "Ijkingstoets September"},
+                {"name": "TTT Calculus en analyse"}
             ]
         }
-    ]   
+    ]
 },
 {
-    "name": "faculty3",
+    "name": "Ingenieurswetenschappen",
         "children": [
             {"name": "Kies"},
             {
-            "name": "Program31",
+            "name": "ABA ingenieurswetenschappen (Leuv)",
                 "children": [
                     {"name": "Kies"},
-                    {"name": "Course311"},
-                    {"name": "Course312"}
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Ijkingstoets September"},
+                    {"name": "TTT Analyse, deel 1"},
+                    {"name": "TTT Toegepaste mechanica, deel 1"},
+                    {"name": "TTT Toegepaste algebra"},
+                    {"name": "TTT Algemene en technische scheikunde"}
                 ]
             },
             {
-            "name": "Program32",
+            "name": "ABA ingenieurswetenschappen:architectuur (Leuv)",
                 "children": [
                     {"name": "Kies"},
-                    {"name": "Course321"},
-                    {"name": "Course322"}
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "Ijkingstoets September"},
+                    {"name": "TTT Wiskundige analyse, deel 1"},
+                    {"name": "TTT Toegepaste mechanica, deel 1"}
+                ]
+            }
+        ]
+    },
+{
+    "name": "Industriele Ingenieurswetenschappen",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "ABA biowetenschappen (Geel)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "TTT Wiskunde 1"},
+                    {"name": "TTT Mechanica-statica"},
+                    {"name": "TTT Fysica"},
+                    {"name": "TTT Chemie 1"}
                 ]
             },
             {
-                "name": "Program33",
+            "name": "ABA industriele wetenschappen (Geel)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "TTT Elektriciteit 1"},
+                    {"name": "TTT Mechanica-statica"},
+                    {"name": "TTT Algabra"},
+                    {"name": "TTT Analyse 1"},
+                    {"name": "TTT Fysica 1"},
+                    {"name": "TTT Chemie 1"}
+
+                ]
+            },
+            {
+                "name": "ABA industriele wetenschappen (Aalst)",
                     "children": [
                         {"name": "Kies"},
-                        {"name": "Course331"}
+                        {"name": "Ijkingstoets Juli"},
+                        {"name": "TTT Algebra"},
+                        {"name": "TTT Fysica 1"},
+                        {"name": "TTT Chemie 1"},
+                        {"name": "TTT Computers en programmeren"}
+                    ]
+                },
+            {
+                "name": "ABA industriele wetenschappen (Diepenbeek)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "TTT Analyse 1"},
+                        {"name": "TTT Beginselen van (OO-)programmeren"},
+                        {"name": "TTT Mechanica 1"}
+                    ]
+            },
+            {
+                "name": "ABA industriele wetenschappen (Leuven)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Ijkingstoets Juli"},
+                        {"name": "TTT Biologische en emergente systemen"},
+                        {"name": "TTT Chemie en chemische technologie"},
+                        {"name": "TTT Computers en Programmeren"}
+                    ]
+            },
+            {
+                "name": "ABA industriele wetenschappen (Brugge)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Ijkingstoets Juli"},
+                        {"name": "TTT Fysica 1: energie en optica"},
+                        {"name": "TTT Chemie 1: structuur en materie"},
+                        {"name": "TTT Mechanica: statica"},
+                        {"name": "TTT Analyse"}
+                    ]
+            },
+            {
+                "name": "ABA industriele wetenschappen (Sint-Katelijne-Waver)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Ijkingstoets Juli"},
+                        {"name": "TTT Analyse 1"},
+                        {"name": "TTT Chemie 1"},
+                        {"name": "TTT Elektriciteit 1"},
+                        {"name": "TTT Fysica 1"},
+                        {"name": "TTT Mechanica: statica"},
+                        {"name": "TTT Fysica 2"},
+                        {"name": "TTT Elektriciteit 2"},
+                        {"name": "TTT Grafische Ingenieurstechnieken"},
+                        {"name": "TTT Algebra"},
+                        {"name": "TTT Mechanica, dynamica"}
+                    ]
+            },
+            {
+                "name": "ABA industriele wetenschappen (Gent)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Ijkingstoets"},
+                        {"name": "TTT Algebra"},
+                        {"name": "TTT Fysica 1"},
+                        {"name": "TTT Chemie 1"},
+                        {"name": "TTT Computers en programmeren"}
+                    ]
+            },
+            {
+                "name": "SMA biowetenschappen (Geel)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Positioneringstest"},
+                        {"name": "TTT Wiskunde 1"},
+                        {"name": "TTT Mechanica"},
+                        {"name": "TTT Bio-organische chemie"}
+                    ]
+                },
+                {
+                "name": "SMA industriele wetenschappen (Geel)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Positioneringstest"},
+                        {"name": "TTT Wiskunde 1"},
+                        {"name": "TTT Chemie"},
+                        {"name": "TTT Systeemtheorie"}
+                    ]
+                },
+                {
+                    "name": "SMA industriele wetenschappen (Aalst)",
+                        "children": [
+                            {"name": "Kies"},
+                            {"name": "Positioneringstest"},
+                            {"name": "TTT Algebra"},
+                            {"name": "TTT Fysica 1"},
+                            {"name": "TTT Chemie 1"},
+                            {"name": "TTT Computers en programmeren"}
+                        ]
+                    },
+                {
+                    "name": "SMA industriele wetenschappen (Diepenbeek)",
+                        "children": [
+                            {"name": "Kies"},
+                            {"name": "TTT Analyse 1 en 2"}
+                        ]
+                },
+                {
+                    "name": "SMA industriele wetenschappen (Leuven)",
+                        "children": [
+                            {"name": "Kies"}
+                        ]
+                },
+                {
+                    "name": "SMA industriele wetenschappen (Brugge)",
+                        "children": [
+                            {"name": "Kies"},
+                            {"name": "Positioneringstest"},
+                            {"name": "TTT analyse"},
+                            {"name": "TTT Sterkteleer"},
+                            {"name": "TTT ICT en Energie: Chemie"}
+                        ]
+                },
+                {
+                    "name": "SMA industriele wetenschappen (Sint-Katelijne-Waver)",
+                        "children": [
+                            {"name": "Kies"},
+                            {"name": "Positioneringstest"},
+                            {"name": "TTT Fysica"},
+                            {"name": "TTT Wiskunde"}
+                        ]
+                },
+                {
+                    "name": "SMA industriele wetenschappen (Gent)",
+                        "children": [
+                            {"name": "Kies"},
+                            {"name": "Positioneringstest"},
+                            {"name": "TTT Algebra"},
+                            {"name": "TTT Fysica 1"},
+                            {"name": "TTT Chemie 1"},
+                            {"name": "TTT Computers en programmeren"}
+                        ]
+                }
+        ]
+    },
+{
+    "name": "Architectuur",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "ABA architectuur (Gent)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "TTT Wiskunde - ruimtelijk inzicht"},
+                    {"name": "TTT Communicatieve competenties"},
+                    {"name": "TTT Creativiteit"},
+                    {"name": "TTT Praktische competenties"}
+                ]
+            },
+            {
+            "name": "ABA achitectuur (Brussel)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "TTT Wiskunde - ruimtelijk inzicht"},
+                    {"name": "TTT Communicatieve competenties"},
+                    {"name": "TTT Creativiteit"},
+                    {"name": "TTT Praktische competenties"}
+                ]
+            },
+            {
+                "name": "ABA interieurarchitectuur (Gent)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "TTT Wiskunde - ruimtelijk inzicht"},
+                        {"name": "TTT Communicatieve competenties"},
+                        {"name": "TTT Creativiteit"},
+                        {"name": "TTT Praktische competenties"}
+                    ]
+                },
+            {
+                "name": "ABA interieurarchitectuur (Brussel)",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "TTT Wiskunde - ruimtelijk inzicht"},
+                        {"name": "TTT Communicatieve competenties"},
+                        {"name": "TTT Creativiteit"},
+                        {"name": "TTT Praktische competenties"}
                     ]
                 }
-        ]   
-    }
+        ]
+    },
+{
+    "name": "Geneeskunde",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "ABA Geneeskunde (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "TTT Celbiologie 1"},
+                    {"name": "TTT Celbiologie 2"}
+                ]
+            },
+            {
+            "name": "ABA tandheelkunde (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "TTT Wetenschappelijke fundamenten voor tandartsen"}
+                ]
+            },
+            {
+                "name": "ABA biomedische wetenschappen",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Ijkingstoets Juli"},
+                        {"name": "TTT Algemene en biologische scheikunde"},
+                        {"name": "TTT Biofysica"},
+                        {"name": "TTT Vergelijkende biologie"},
+                        {"name": "TTT Wiskundige methoden"}
+                    ]
+                },
+            {
+                "name": "ABA logopedische en audiologische wetenschappen",
+                    "children": [
+                        {"name": "Kies"},
+                        {"name": "Ijkingstoets Juli"},
+                        {"name": "TTT Natuurkunde met inbegrip van wiskundige basis"},
+                        {"name": "TTT Basisbegrippen taalkunde: morfologie en syntaxis"}
+                    ]
+                }
+        ]
+},
+{
+    "name": "Farmaceutische Wetenschappen",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "ABA farmaceutische wetenschappen",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "TTT Natuurkunde"}
+                ]
+            }
+            ]
+},
+{
+    "name": "Economie en Bedrijfswetenschappen",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "ABA TEW:handelsingenieur (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "Ijkingstoets Juli"},
+                    {"name": "TTT Hogere wiskunde 1"},
+                    {"name": "TTT Markten en prijzen"},
+                    {"name": "TTT Accountancy"}
+                ]
+            }
+            ]
+},
+{
+    "name": "Letteren",
+        "children": [
+            {"name": "Kies"},
+            {
+            "name": "ABA geschiedenis (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "startmeeting"},
+                    {"name": "TTT Geschiedenis van de Middeleeuwen"},
+                    {"name": "TTT Geschiedenis van Griekenland en Rome"}
+                ]
+            },
+            {
+            "name": "ABA taal- en letterkunde (Leuv)",
+                "children": [
+                    {"name": "Kies"},
+                    {"name": "TTT Algemene taalwetenschap 1"},
+                    {"name": "TTT Inleiding tot de studie van de Europese cultuur en literatuur: voor 1800"}
+                ]
+            }
+            ]
+}
 ]
-
-
-
-
-
-
