@@ -1,15 +1,15 @@
-##UploadData
+## UploadData
 
 Little piece of code to upload grades of students
 
-##dropdown
+## dropdown
 Users can select a faculty, a program and a course from a dropdown.
 
   These options are shown in options.json
 
   The update of the dropdown happens in showDropdown.js
 
-##Uploading
+## Uploading
 
 We expect the user to upload a csv file (, or ; separated) with two columns:
 
@@ -23,11 +23,11 @@ We expect the user to upload a csv file (, or ; separated) with two columns:
 
   There are some sample files in the folder samples to illustrate
 
-##Saving
+## Saving
 
 We save the grades in ../uploads
 
-##Converting
+## Converting
 
 When the grades are uploaded, we convert all of them in a json file
 
@@ -35,4 +35,4 @@ When the grades are uploaded, we convert all of them in a json file
 
   run python parseCSV.Py
 
-##License
+## License
