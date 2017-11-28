@@ -2,6 +2,8 @@
 
 Little piece of code to upload grades of students
 
+To test it local: run php -S localhost:8000
+
 ## dropdown
 Users can select a faculty, a program and a course from a dropdown.
 
